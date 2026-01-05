@@ -1,177 +1,177 @@
- [
-    {
+[
+  {
     "id": "79974b80-2e1c-5ffb-9e1d-caba0a2d0a0e",
     "name": "Banteay Meanchey",
     "type": "province",
     "postal_code_prefix": "01",
-    "postal_code_range": "0100000-0199999"
-    },
-    {
+    "postal_code_range": "010100 to 010903"
+  },
+  {
     "id": "63c022ca-68c7-5074-b508-9b78f745ee8c",
     "name": "Battambang",
     "type": "province",
     "postal_code_prefix": "02",
-    "postal_code_range": "0200000-0299999"
-    },
-    {
+    "postal_code_range": "120101 to 121208"
+  },
+  {
     "id": "beb0bdbe-4858-5cb9-87d6-4885734f38c0",
     "name": "Kampong Cham",
     "type": "province",
     "postal_code_prefix": "03",
-    "postal_code_range": "0300000-0399999"
-    },
-    {
+    "postal_code_range": "022514 to 031012"
+  },
+  {
     "id": "1251d5f5-8b2b-5620-bf30-429d934a7da1",
     "name": "Kampong Chhnang",
     "type": "province",
     "postal_code_prefix": "04",
-    "postal_code_range": "0400000-0499999"
-    },
-    {
+    "postal_code_range": "040101 to 040804"
+  },
+  {
     "id": "0efae687-7137-59a9-ba5b-63dd917a1eb9",
     "name": "Kampong Speu",
     "type": "province",
     "postal_code_prefix": "05",
-    "postal_code_range": "0500000-0599999"
-    },
-    {
+    "postal_code_range": "050101 to 050805"
+  },
+  {
     "id": "16cf73d0-dd20-5f9a-89bb-afedaf5415d7",
     "name": "Kampong Thom",
     "type": "province",
     "postal_code_prefix": "06",
-    "postal_code_range": "0600000-0699999"
-    },
-    {
+    "postal_code_range": "060101 to 060808"
+  },
+  {
     "id": "42962902-0422-505a-9e85-f1cf42558a53",
     "name": "Kampot",
     "type": "province",
     "postal_code_prefix": "07",
-    "postal_code_range": "0700000-0799999"
-    },
-    {
+    "postal_code_range": "070101 to 070805"
+  },
+  {
     "id": "40cd4238-ca3a-5fcc-a725-7dde9dd2f998",
     "name": "Kandal",
     "type": "province",
     "postal_code_prefix": "08",
-    "postal_code_range": "0800000-0899999"
-    },
-    {
+    "postal_code_range": "080101 to 081106"
+  },
+  {
     "id": "c24d44ab-f4e5-51e5-9dfe-8540106a11cf",
     "name": "Koh Kong",
     "type": "province",
     "postal_code_prefix": "09",
-    "postal_code_range": "0900000-0999999"
-    },
-    {
+    "postal_code_range": "090101 to 090703"
+  },
+  {
     "id": "9b41e531-5228-5d9a-8426-d7130655fbb9",
     "name": "Kratie",
     "type": "province",
     "postal_code_prefix": "10",
-    "postal_code_range": "10000000-10999999"
-    },
-    {
+    "postal_code_range": "100201 to 100605"
+  },
+  {
     "id": "5d9aa088-9121-53d0-a1c8-00d1f9147334",
     "name": "Mondul Kiri",
     "type": "province",
     "postal_code_prefix": "11",
-    "postal_code_range": "11000000-11999999"
-    },
-    {
+    "postal_code_range": "110101 to 110504"
+  },
+  {
     "id": "ab32a2d2-b21c-55ef-8d84-b67c9f6ed95a",
     "name": "Phnom Penh",
     "type": "capital",
     "postal_code_prefix": "12",
-    "postal_code_range": "12000000-12999999"
-    },
-    {
+    "postal_code_range": "120101 to 121208"
+  },
+  {
     "id": "11cfe46f-1842-5733-afbd-9605cced04c0",
     "name": "Preah Vihear",
     "type": "province",
     "postal_code_prefix": "13",
-    "postal_code_range": "13000000-13999999"
-    },
-    {
+    "postal_code_range": "130101 to 130802"
+  },
+  {
     "id": "15201c1a-dc9b-5962-a9fa-24cbe3b48746",
     "name": "Prey Veng",
     "type": "province",
     "postal_code_prefix": "14",
-    "postal_code_range": "14000000-14999999"
-    },
-    {
+    "postal_code_range": "140101 to 141303"
+  },
+  {
     "id": "076d3f88-4c2b-5c0c-8023-183c419e56c5",
     "name": "Pursat",
     "type": "province",
     "postal_code_prefix": "15",
-    "postal_code_range": "15000000-15999999"
-    },
-    {
+    "postal_code_range": "150101 to 150607"
+  },
+  {
     "id": "712cfa17-c1c3-5f83-9da5-5a9c4c2ff09a",
     "name": "Ratanak Kiri",
     "type": "province",
     "postal_code_prefix": "16",
-    "postal_code_range": "16000000-16999999"
-    },
-    {
+    "postal_code_range": "160101 to 160904"
+  },
+  {
     "id": "e16d87a8-2122-58ea-a127-34b59d72a792",
     "name": "Siemreap",
     "type": "province",
     "postal_code_prefix": "17",
-    "postal_code_range": "17000000-17999999"
-    },
-    {
+    "postal_code_range": "170101 to 171212"
+  },
+  {
     "id": "76710b0e-14cb-591e-9c73-159004f3ef0f",
     "name": "Preah Sihanouk",
     "type": "province",
     "postal_code_prefix": "18",
-    "postal_code_range": "18000000-18999999"
-    },
-    {
+    "postal_code_range": "180101 to 180406"
+  },
+  {
     "id": "0241cd72-157a-5295-abf7-3b3e9534a633",
     "name": "Stung Treng",
     "type": "province",
     "postal_code_prefix": "19",
-    "postal_code_range": "19000000-19999999"
-    },
-    {
+    "postal_code_range": "190101 to 190504"
+  },
+  {
     "id": "124fedf4-58d1-5175-9769-22fb60ffc0c8",
     "name": "Svay Rieng",
     "type": "province",
     "postal_code_prefix": "20",
-    "postal_code_range": "20000000-20999999"
-    },
-    {
+    "postal_code_range": "200101 to 200805"
+  },
+  {
     "id": "0d35cbfd-2a15-54f1-9baf-7106b1d11be3",
     "name": "Takeo",
     "type": "province",
     "postal_code_prefix": "21",
-    "postal_code_range": "21000000-21999999"
-    },
-    {
+    "postal_code_range": "210101 to 211003"
+  },
+  {
     "id": "d1a22b8a-9ac9-520f-a885-9deff4098ff1",
     "name": "Oddar Meanchey",
     "type": "province",
     "postal_code_prefix": "22",
-    "postal_code_range": "22000000-22999999"
-    },
-    {
+    "postal_code_range": "240201 to 240505"
+  },
+  {
     "id": "ab507a29-b47e-533e-a7ca-78ec13ba542e",
     "name": "Kep",
     "type": "province",
     "postal_code_prefix": "23",
-    "postal_code_range": "23000000-23999999"
-    },
-    {
+    "postal_code_range": "220101 to 220203"
+  },
+  {
     "id": "616a835f-409f-5344-a0c1-55aee206c26f",
     "name": "Pailin",
     "type": "province",
     "postal_code_prefix": "24",
-    "postal_code_range": "24000000-24999999"
-    },
-    {
+    "postal_code_range": "230101 to 230204"
+  },
+  {
     "id": "ba165971-013b-5538-bc5c-c155b53127ac",
     "name": "Tboung Khmum",
     "type": "province",
     "postal_code_prefix": "25",
-    "postal_code_range": "25000000-25999999"
-    }
+    "postal_code_range": "250101 to 250702"
+  }
 ]
