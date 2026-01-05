@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambodia Postal Codes</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Cambodia Provinces Postal Codes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Prefix</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% provinces.forEach(p => { %>
+      <tr>
+        <td><%= p.name %></td>
+        <td><%= p.type %></td>
+        <td><%= p.postal_code_prefix %></td>
+        <td><%= p.postal_code_range %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+</body>
+</html>
