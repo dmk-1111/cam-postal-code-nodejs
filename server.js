@@ -5,27 +5,40 @@ app.get('/', (req,res)=>{
     res.end("Welcome to the Cambodia Postal Code Project!");
 });
 
+const fs = require('fs');
+const path = require('path');
+
 app.get('/api/cam-postal-code', async (req, res) => {
+    const name = req.query.name;
 
-    const queryParam = req.query.name;
-    const fs = require('fs');
-    const path = require('path');
+    if (!name) {
+        return res.status(400).json({ message: 'name is required' });
+    }
 
-    // Path to your JSON file
-    const filePath = path.join(__dirname, 'data/cambodia-postal-code.json');
+    try {
+        const filePath = path.join(__dirname, 'data/cambodia-postal-code.json');
 
-    // Read JSON file
-    const rawData = fs.readFileSync(filePath, 'utf8');
+        // Read file async
+        const rawData = fs.readFileSync(filePath, 'utf8');
+        const postalCode = JSON.parse(rawData);
 
-    // Parse JSON to JavaScript array
-    const postalCode = JSON.parse(rawData);
+        const result = postalCode.filter(
+            code => code.name.toLowerCase() === name.toLowerCase()
+        );
 
-    // Example: filter employees in HR department
-    const result = postalCode.filter(code => code.name === queryParam);
-    result.forEach(element => {
-        res.end(element.postal_code_range);
-    });
+        if (result.length === 0) {
+            return res.status(404).json({ message: 'No postal code found' });
+        }
+
+        // Send response ONCE
+        return res.json(result);
+
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: 'Internal Server Error' });
+    }
 });
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on ${PORT}`));
