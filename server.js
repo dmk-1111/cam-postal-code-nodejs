@@ -1,37 +1,30 @@
-// require('dotenv').config();
 const express = require('express');
-// const { MongoClient } = require('mongodb');
-
 const app = express();
 
-// const client = new MongoClient(process.env.MONGO_URI, {
-//   tls: true,
-//   family: 4,
-//   serverSelectionTimeoutMS: 5000,
-// });
+app.get('/', (req,res)=>{
+    res.end("Welcome to the Cambodia Postal Code Project!");
+});
 
-// let collection;
+app.get('/api/cam-postal-code', async (req, res) => {
 
-// (async () => {
-//   try {
-//     await client.connect();
-//     const db = client.db('dmk-db');
-//     collection = db.collection('cam_postal_code');
-//     console.log('✅ MongoDB Connected');
-//   } catch (err) {
-//     console.error('❌ MongoDB connection failed:', err);
-//     process.exit(1);
-//   }
-// })();
+    const queryParam = req.query.name;
+    const fs = require('fs');
+    const path = require('path');
 
-app.get('/', async (req, res) => {
-  const data = {
-    "title": "string",
-    "completed": "boolean",
-    "priority": "number",
-    "app_user_id": "uuid (optional)"
-    }
-  res.json(data);
+    // Path to your JSON file
+    const filePath = path.join(__dirname, 'data/cambodia-postal-code.json');
+
+    // Read JSON file
+    const rawData = fs.readFileSync(filePath, 'utf8');
+
+    // Parse JSON to JavaScript array
+    const postalCode = JSON.parse(rawData);
+
+    // Example: filter employees in HR department
+    const result = postalCode.filter(code => code.name === queryParam);
+    result.forEach(element => {
+        res.end(element.postal_code_range);
+    });
 });
 
 const PORT = process.env.PORT || 3000;
