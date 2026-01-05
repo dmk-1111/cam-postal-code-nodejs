@@ -1,53 +1,33 @@
-const express = require('express');
 require('dotenv').config();
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const express = require('express');
+const { MongoClient } = require('mongodb');
 
 const app = express();
 
-// 🔐 Use Environment Variable (IMPORTANT)
-const MONGO_URI = process.env.MONGO_URI;
-
-const DB_NAME = 'dmk-db';
-const COLLECTION = 'cam_postal_code';
-
-// 🔹 Set EJS
-app.set('views', 'src/view');
-app.set('view engine', 'ejs');
-
-// 🔹 Mongo Client (TLS handled automatically)
-const client = new MongoClient(MONGO_URI, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  }
+const client = new MongoClient(process.env.MONGO_URI, {
+  tls: true,
+  family: 4,
+  serverSelectionTimeoutMS: 5000,
 });
 
 let collection;
 
-// 🔹 Connect ONCE
-async function connectDB() {
-  await client.connect();
-  const db = client.db('dmk-db');
-  collection = db.collection('cam_postal_code');
-  console.log('✅ MongoDB Connected');
-}
-
-connectDB().catch(console.error);
-
-// 🔹 Route
-app.get('/', async (req, res) => {
+(async () => {
   try {
-    const provinces = await collection.find({}).toArray();
-    res.render('index', { provinces });
+    await client.connect();
+    const db = client.db('dmk-db');
+    collection = db.collection('cam_postal_code');
+    console.log('✅ MongoDB Connected');
   } catch (err) {
-    console.error(err);
-    res.status(500).send('Database Error');
+    console.error('❌ MongoDB connection failed:', err);
+    process.exit(1);
   }
+})();
+
+app.get('/', async (req, res) => {
+  const data = await collection.find({}).toArray();
+  res.json(data);
 });
 
-// 🔹 Render uses PORT env
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`🚀 Server running on ${PORT}`));
