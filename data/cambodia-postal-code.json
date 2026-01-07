@@ -71,7 +71,7 @@
   },
   {
     "id": "5d9aa088-9121-53d0-a1c8-00d1f9147334",
-    "name": "Mondul Kiri",
+    "name": "Mondulkiri",
     "type": "province",
     "postal_code_prefix": "11",
     "postal_code_range": "110101 to 110504"
@@ -106,7 +106,7 @@
   },
   {
     "id": "712cfa17-c1c3-5f83-9da5-5a9c4c2ff09a",
-    "name": "Ratanak Kiri",
+    "name": "RatanakKiri",
     "type": "province",
     "postal_code_prefix": "16",
     "postal_code_range": "160101 to 160904"
